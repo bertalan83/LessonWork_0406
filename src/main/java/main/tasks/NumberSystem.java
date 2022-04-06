@@ -5,6 +5,15 @@ public class NumberSystem {
     public static void main(String[] args) {
         int decimal = 4242;
 
+        System.out.println(decimalToBinary(decimal));
+    }
+
+    /**
+     * Átváltja a decimal nevű tízes számrendszerbeli számot kettes számrendszerbe,
+     * és visszatér a kettes számrendszerbeli alakjával.
+     */
+    public static long decimalToBinary(int decimal) {
+
         long binary = 0;
         long tenPower = 1;
 
@@ -15,20 +24,11 @@ public class NumberSystem {
             decimal /= 2;
         }
 
-        // --- ellenőrzéshez:
+        /*// --- ellenőrzéshez:
 
-        long binaryShouldBe = 1000010010010L;
+        long binaryShouldBe = 1000010010010L;*/
 
-        System.out.println(binary == binaryShouldBe);
-    }
-
-    /**
-     * Átváltja a decimal nevű tízes számrendszerbeli számot kettes számrendszerbe,
-     * és visszatér a kettes számrendszerbeli alakjával.
-     */
-    public static long decimalToBinary(int decimal) {
-        // write your code here
-        return -1;
+        return binary;
     }
 
 }

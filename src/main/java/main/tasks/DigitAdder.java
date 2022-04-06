@@ -3,7 +3,17 @@ package main.tasks;
 public class DigitAdder {
 
     public static void main(String[] args) {
+
         int number = -5483229;
+
+
+        System.out.println(addDigits(number));
+    }
+
+    /**
+     * Összeadja egy szám számjegyeit, és visszatér az összeggel.
+     */
+    public static int addDigits(int number) {
 
         int numPos = Math.abs(number);
         int result = 0;
@@ -14,15 +24,7 @@ public class DigitAdder {
             numPos /= 10;
         }
 
-        System.out.println(result);
-    }
-
-    /**
-     * Összeadja egy szám számjegyeit, és visszatér az összeggel.
-     */
-    public static int addDigits(int number) {
-        // write your code here
-        return -1;
+        return result;
     }
 
 }
